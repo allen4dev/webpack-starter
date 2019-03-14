@@ -1,5 +1,6 @@
-const a = 145;
+import React from 'react';
+import { render } from 'react-dom';
 
-const something = 'Lets go';
-console.log(a);
-console.log(something);
+import App from './App';
+
+render(<App />, document.getElementById('root'));

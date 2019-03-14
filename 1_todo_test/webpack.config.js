@@ -1,11 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'client.js'
+    filename: 'client.js',
   },
   module: {
     rules: [
@@ -13,8 +13,13 @@ module.exports = {
         test: /\.js$/,
         use: 'eslint-loader',
         exclude: /node_modules/,
-        enforce: 'pre'
-      }
-    ]
-  }
+        enforce: 'pre',
+      },
+      {
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
 };
