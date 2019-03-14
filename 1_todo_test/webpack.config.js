@@ -6,5 +6,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'client.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: 'eslint-loader',
+        exclude: /node_modules/,
+        enforce: 'pre'
+      }
+    ]
   }
 };

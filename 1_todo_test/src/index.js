@@ -1,4 +1,5 @@
-var a = 145;
+const a = 145;
 
-    var something = "Lets go"
+    const something = "Lets go"
           console.log(a)
+          console.log(something)
