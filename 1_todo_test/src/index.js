@@ -1,4 +1,4 @@
-var a = 1;
+var a = 145;
 
     var something = "Lets go"
           console.log(a)
