@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack-dev-server --color --mode development"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,8 @@
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "react": "^16.8.4",

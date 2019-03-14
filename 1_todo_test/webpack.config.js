@@ -7,6 +7,13 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'client.js',
   },
+  devServer: {
+    contentBase: path.join(__dirname, './public'),
+    hot: true,
+    // hotOnly: true,
+    historyApiFallback: true,
+    overlay: true,
+  },
   module: {
     rules: [
       {
