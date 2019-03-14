@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import ClassComponent from './ClassComponent';
 
 function App() {
-  if (true) {
-    const [a, setA] = useState('invalid');
-  }
-
   return (
     <div>
       <h1>Webpack starter</h1>
+      <ClassComponent />
     </div>
   );
 }
