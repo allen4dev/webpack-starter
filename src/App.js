@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <h1>Hello with React</h1>
+      <h1>Webpack starter</h1>
     </div>
   );
 }
