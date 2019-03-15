@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server --color --mode development"
+    "dev": "webpack-dev-server --color --mode development",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -28,13 +29,17 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.1",
+    "jest": "^24.5.0",
+    "jest-dom": "^3.1.3",
     "prettier": "^1.16.4",
+    "react-testing-library": "^6.0.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.3.4",
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   }
