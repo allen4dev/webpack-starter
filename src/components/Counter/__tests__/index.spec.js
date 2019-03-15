@@ -4,7 +4,7 @@ import 'react-testing-library/cleanup-after-each';
 import React from 'react';
 import { render, fireEvent } from 'react-testing-library';
 
-import Counter from '../index';
+import Counter from 'components/Counter';
 
 it('should render with defaults', () => {
   const { getByTestId } = render(<Counter />);

@@ -7,6 +7,9 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'client.js',
   },
+  resolve: {
+    modules: ['node_modules', path.join(__dirname, 'src')],
+  },
   devServer: {
     contentBase: path.join(__dirname, './public'),
     hot: true,

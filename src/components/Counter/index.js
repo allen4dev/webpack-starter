@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { number } from 'prop-types';
 
-import logo from '../../images/logo.png';
+import logo from 'images/logo.png';
 
 function Counter({ initialCount }) {
   const [count, setCount] = useState(initialCount);
