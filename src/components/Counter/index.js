@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { number } from 'prop-types';
 
+import logo from '../../images/logo.png';
+
 function Counter({ initialCount }) {
   const [count, setCount] = useState(initialCount);
 
@@ -18,6 +20,10 @@ function Counter({ initialCount }) {
       <button type="button" onClick={decrement}>
         Decrement
       </button>
+
+      <figure>
+        <img src={logo} alt="League of legends" />
+      </figure>
     </div>
   );
 }
