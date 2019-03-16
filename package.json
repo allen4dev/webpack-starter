@@ -9,7 +9,8 @@
     "test": "npm run test:watch",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:e2e:dev": "cypress open"
+    "cy:open": "cypress open",
+    "test:e2e:dev": "start-server-and-test dev http://localhost:8080 cy:open"
   },
   "keywords": [],
   "author": "",
@@ -50,6 +51,7 @@
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
     "react-testing-library": "^6.0.0",
+    "start-server-and-test": "^1.7.12",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
