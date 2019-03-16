@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with defaults 1`] = `
+.emotion-0 {
+  color: hotpink;
+}
+
+<div
+  class="emotion-2 emotion-3"
+>
+  <h1
+    class="emotion-0 emotion-1"
+    data-testid="total"
+  >
+    Count: 
+    0
+  </h1>
+  <button
+    type="button"
+  >
+    Increment
+  </button>
+  <button
+    type="button"
+  >
+    Decrement
+  </button>
+  <figure>
+    <img
+      alt="League of legends"
+      src="[object Object]"
+    />
+  </figure>
+</div>
+`;

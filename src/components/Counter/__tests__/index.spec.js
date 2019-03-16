@@ -4,7 +4,9 @@ import { render, fireEvent } from 'react-testing-library';
 import Counter from 'components/Counter';
 
 it('should render with defaults', () => {
-  const { getByTestId } = render(<Counter />);
+  const { container, getByTestId } = render(<Counter />);
+
+  expect(container.firstChild).toMatchSnapshot();
 
   expect(getByTestId('total')).toHaveTextContent('Count: 0');
 });
