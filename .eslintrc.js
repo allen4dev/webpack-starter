@@ -2,7 +2,10 @@ const path = require('path');
 
 module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['react-hooks', 'prettier'],
+  plugins: ['react-hooks', 'cypress', 'prettier'],
+  env: {
+    'cypress/globals': true,
+  },
   parser: 'babel-eslint',
   rules: {
     'prettier/prettier': 'error',

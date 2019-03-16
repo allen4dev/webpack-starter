@@ -3,3 +3,5 @@
 /coverage
 *.log
 .vscode
+cypress/videos
+cypress/screenshots
