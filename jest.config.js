@@ -1,10 +1,7 @@
-const path = require('path');
+const commonConfig = require('./test/jest.common');
 
 module.exports = {
-  moduleDirectories: ['node_modules', path.join(__dirname, 'src')],
-  moduleNameMapper: {
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/test/__mocks__/fileMock.js',
-  },
-  setupFilesAfterEnv: ['<rootDir>/test/setup.js'],
+  ...commonConfig,
+  // 1 hour to figure to projects fails only one project is passed
+  projects: ['<rootDir>/test/jest.client.js', '<rootDir>/test/jest.lint.js'],
 };
