@@ -39,4 +39,6 @@ it('total should subtract 1 to the total after clicking on the decrement button'
   expect(total).toHaveTextContent('Count: 1');
 });
 
-it('pass', () => {});
+it('should be true', () => {
+  expect(true).toBeTruthy();
+});
