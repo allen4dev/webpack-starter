@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { number } from 'prop-types';
+import styled from 'styled-components';
 
 import logo from 'images/logo.png';
+
+const Wrapper = styled.div``;
+const Total = styled.h1`
+  color: hotpink;
+`;
 
 function Counter({ initialCount }) {
   const [count, setCount] = useState(initialCount);
@@ -10,8 +16,8 @@ function Counter({ initialCount }) {
   const decrement = () => setCount(prevCount => prevCount - 1);
 
   return (
-    <div>
-      <h1 data-testid="total">Count: {count}</h1>
+    <Wrapper>
+      <Total data-testid="total">Count: {count}</Total>
 
       <button type="button" onClick={increment}>
         Increment
@@ -24,7 +30,7 @@ function Counter({ initialCount }) {
       <figure>
         <img src={logo} alt="League of legends" />
       </figure>
-    </div>
+    </Wrapper>
   );
 }
 
