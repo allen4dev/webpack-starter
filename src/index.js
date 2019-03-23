@@ -1,10 +1,19 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import GlobalStyles from './styles/GlobalStyles';
+import Theme from './styles/Theme';
+
 import App from './App';
 
 function renderApp() {
-  render(<App />, document.getElementById('root'));
+  render(
+    <Theme>
+      <GlobalStyles />
+      <App />
+    </Theme>,
+    document.getElementById('root'),
+  );
 }
 
 renderApp();

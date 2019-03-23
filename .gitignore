@@ -3,5 +3,6 @@
 /coverage
 *.log
 .vscode
+.DS_Store
 cypress/videos
 cypress/screenshots
